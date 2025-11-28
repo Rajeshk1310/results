@@ -4,7 +4,7 @@ function verifyUser() {
 
     // Your user credentials
     const users = {
-        "2261905": "03-01-2026"  // ID : DOB (password)
+    "2261905": "29-06-1991"
     };
 
     if (users[id] && users[id] === pass) {

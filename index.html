@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result Login</title>
+<style>
+body { font-family: Arial; background: #eef1f5; padding-top: 50px; }
+.login-box {
+  width: 350px; margin: auto; background: #fff; padding: 25px;
+  border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px;
+border: 1px solid #ccc; }
+button {
+  width: 100%; padding: 10px; background: #0077cc; color: white;
+  border: none; border-radius: 5px; cursor: pointer;
+}
+button:hover { background: #005fa3; }
+.error { color: red; text-align:center; display:none; }
+</style>
+</head>
+<body>
+
+<div class="login-box">
+  <h2 style="text-align:center;">Check Your Result</h2>
+
+  <label>Candidate ID</label>
+  <input type="text" id="userid" placeholder="Enter ID">
+
+  <label>Password (DOB)</label>
+  <input type="password" id="password" placeholder="DD-MM-YYYY">
+
+  <button onclick="verifyUser()">Login</button>
+
+  <p class="error" id="error">Invalid ID or Password</p>
+</div>
+
+<script src="verify.js"></script>
+
+</body>
+</html>
